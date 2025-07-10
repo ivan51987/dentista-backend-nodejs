@@ -1,0 +1,218 @@
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-06-19 10:37:14"}
+{"level":"error","message":"Unable to connect to the database: la autentificación password falló para el usuario «postgres»","name":"SequelizeConnectionError","original":{"code":"28P01","file":"auth.c","length":118,"line":"321","name":"error","routine":"auth_failed","severity":"FATAL"},"parent":{"code":"28P01","file":"auth.c","length":118,"line":"321","name":"error","routine":"auth_failed","severity":"FATAL"},"service":"dental-clinic-api","stack":"SequelizeConnectionError: la autentificación password falló para el usuario «postgres»\n    at Client._connectionCallback (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:145:24)\n    at Client._handleErrorWhileConnecting (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/pg/lib/client.js:336:19)\n    at Client._handleErrorMessage (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/pg/lib/client.js:356:19)\n    at Connection.emit (node:events:518:28)\n    at Connection.emit (node:domain:489:12)\n    at /home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/pg/lib/connection.js:116:12\n    at Parser.parse (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/pg-protocol/dist/parser.js:36:17)\n    at Socket.<anonymous> (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/pg-protocol/dist/index.js:11:42)\n    at Socket.emit (node:events:518:28)\n    at Socket.emit (node:domain:489:12)\n    at addChunk (node:internal/streams/readable:561:12)\n    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)\n    at Readable.push (node:internal/streams/readable:392:5)\n    at TCP.onStreamRead (node:internal/stream_base_commons:189:23)","timestamp":"2025-06-19 10:37:14"}
+{"level":"error","message":"Error synchronizing database: la autentificación password falló para el usuario «postgres»","name":"SequelizeConnectionError","original":{"code":"28P01","file":"auth.c","length":118,"line":"321","name":"error","routine":"auth_failed","severity":"FATAL"},"parent":{"code":"28P01","file":"auth.c","length":118,"line":"321","name":"error","routine":"auth_failed","severity":"FATAL"},"service":"dental-clinic-api","stack":"SequelizeConnectionError: la autentificación password falló para el usuario «postgres»\n    at Client._connectionCallback (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:145:24)\n    at Client._handleErrorWhileConnecting (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/pg/lib/client.js:336:19)\n    at Client._handleErrorMessage (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/pg/lib/client.js:356:19)\n    at Connection.emit (node:events:518:28)\n    at Connection.emit (node:domain:489:12)\n    at /home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/pg/lib/connection.js:116:12\n    at Parser.parse (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/pg-protocol/dist/parser.js:36:17)\n    at Socket.<anonymous> (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/pg-protocol/dist/index.js:11:42)\n    at Socket.emit (node:events:518:28)\n    at Socket.emit (node:domain:489:12)\n    at addChunk (node:internal/streams/readable:561:12)\n    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)\n    at Readable.push (node:internal/streams/readable:392:5)\n    at TCP.onStreamRead (node:internal/stream_base_commons:189:23)","timestamp":"2025-06-19 10:37:14"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-06-19 10:40:43"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-06-19 10:40:43"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-06-19 10:40:43"}
+{"body":{"email":"ivan@example.com","firstName":"ivan","lastName":"flores","password":"123456789","role":"admin"},"level":"error","message":"connect ECONNREFUSED ::1:587","method":"POST","service":"dental-clinic-api","stack":"Error: connect ECONNREFUSED ::1:587\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1636:16)","timestamp":"2025-06-19 10:52:37","url":"/api/v1/auth/register","user":"unauthenticated"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-06-19 10:56:34"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-06-19 10:56:34"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-06-19 10:56:35"}
+{"body":{"email":"ivan@example.com","firstName":"ivan","lastName":"flores","password":"123456789","role":"admin"},"level":"error","message":"User already exists with this email","method":"POST","service":"dental-clinic-api","stack":"Error: User already exists with this email\n    at register (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/src/controllers/authController.js:71:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-06-19 10:56:42","url":"/api/v1/auth/register","user":"unauthenticated"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-06-19 11:08:51"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-06-19 11:08:51"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-06-19 11:08:51"}
+{"body":{"email":"ivan@example.com","password":"123456789"},"level":"error","message":"secretOrPrivateKey must have a value","method":"POST","service":"dental-clinic-api","stack":"Error: secretOrPrivateKey must have a value\n    at module.exports [as sign] (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/jsonwebtoken/sign.js:107:20)\n    at login (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/src/controllers/authController.js:37:32)","timestamp":"2025-06-19 11:16:41","url":"/api/v1/auth/login","user":"unauthenticated"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-06-19 11:20:50"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-06-19 11:20:50"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-06-19 11:20:51"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-06-19 11:25:15"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-06-19 11:25:15"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-06-19 11:25:15"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-06-19 11:27:06"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-06-19 11:27:06"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-06-19 11:27:06"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-06-19 11:32:44"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-06-19 11:32:44"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-06-19 11:32:44"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-06-19 11:33:44"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-06-19 11:33:44"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-06-19 11:33:44"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-06-19 11:49:17"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-06-19 11:49:17"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-06-19 11:49:18"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-06-19 11:51:23"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-06-19 11:51:23"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-06-19 11:51:23"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-06-19 18:42:30"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-06-19 18:42:30"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-06-19 18:42:31"}
+{"body":{},"level":"error","message":"DentalRecord is associated to Patient using an alias. You must use the 'as' keyword to specify the alias within your include statement.","method":"GET","service":"dental-clinic-api","stack":"SequelizeEagerLoadingError: DentalRecord is associated to Patient using an alias. You must use the 'as' keyword to specify the alias within your include statement.\n    at Patient._getIncludedAssociation (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/sequelize/lib/model.js:576:13)\n    at Patient._validateIncludedElement (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/sequelize/lib/model.js:502:53)\n    at /home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/sequelize/lib/model.js:421:37\n    at Array.map (<anonymous>)\n    at Patient._validateIncludedElements (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/sequelize/lib/model.js:417:39)\n    at Patient.aggregate (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/sequelize/lib/model.js:1252:12)\n    at Patient.count (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/sequelize/lib/model.js:1306:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 0)\n    at async Patient.findAndCountAll (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/sequelize/lib/model.js:1322:27)\n    at async getAllPatients (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/src/controllers/patientController.js:29:24)","timestamp":"2025-06-19 18:56:43","url":"/api/v1/patients?sortOrder=ASC","user":"3fe2d6ec-d9f2-41d7-897e-d408a6b0227a"}
+{"body":{},"level":"error","message":"DentalRecord is associated to Patient using an alias. You must use the 'as' keyword to specify the alias within your include statement.","method":"GET","service":"dental-clinic-api","stack":"SequelizeEagerLoadingError: DentalRecord is associated to Patient using an alias. You must use the 'as' keyword to specify the alias within your include statement.\n    at Patient._getIncludedAssociation (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/sequelize/lib/model.js:576:13)\n    at Patient._validateIncludedElement (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/sequelize/lib/model.js:502:53)\n    at /home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/sequelize/lib/model.js:421:37\n    at Array.map (<anonymous>)\n    at Patient._validateIncludedElements (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/sequelize/lib/model.js:417:39)\n    at Patient.aggregate (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/sequelize/lib/model.js:1252:12)\n    at Patient.count (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/sequelize/lib/model.js:1306:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 0)\n    at async Patient.findAndCountAll (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/sequelize/lib/model.js:1322:27)\n    at async getAllPatients (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/src/controllers/patientController.js:29:24)","timestamp":"2025-06-19 18:57:22","url":"/api/v1/patients?page=1&limit=1&sortOrder=ASC","user":"3fe2d6ec-d9f2-41d7-897e-d408a6b0227a"}
+{"body":{},"level":"error","message":"Unexpected token '\"', \"\"maria marcela\"\" is not valid JSON","method":"POST","service":"dental-clinic-api","stack":"SyntaxError: Unexpected token '\"', \"\"maria marcela\"\" is not valid JSON\n    at JSON.parse (<anonymous>)\n    at createStrictSyntaxError (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/body-parser/lib/types/json.js:169:10)\n    at parse (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/body-parser/lib/types/json.js:86:15)\n    at /home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/body-parser/lib/read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)\n    at invokeCallback (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/raw-body/index.js:238:16)\n    at done (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/raw-body/index.js:227:7)\n    at IncomingMessage.onEnd (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/raw-body/index.js:287:7)\n    at IncomingMessage.emit (node:events:518:28)\n    at IncomingMessage.emit (node:domain:488:12)\n    at endReadableNT (node:internal/streams/readable:1696:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","timestamp":"2025-06-19 18:59:26","url":"/api/v1/patients","user":"unauthenticated"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-06-19 19:08:38"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-06-19 19:08:38"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-06-19 19:08:39"}
+{"body":{},"level":"error","message":"Unexpected token '\"', \"\"maria marcela\"\" is not valid JSON","method":"POST","service":"dental-clinic-api","stack":"SyntaxError: Unexpected token '\"', \"\"maria marcela\"\" is not valid JSON\n    at JSON.parse (<anonymous>)\n    at createStrictSyntaxError (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/body-parser/lib/types/json.js:169:10)\n    at parse (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/body-parser/lib/types/json.js:86:15)\n    at /home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/body-parser/lib/read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)\n    at invokeCallback (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/raw-body/index.js:238:16)\n    at done (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/raw-body/index.js:227:7)\n    at IncomingMessage.onEnd (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/node_modules/raw-body/index.js:287:7)\n    at IncomingMessage.emit (node:events:518:28)\n    at IncomingMessage.emit (node:domain:488:12)\n    at endReadableNT (node:internal/streams/readable:1696:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","timestamp":"2025-06-19 19:08:45","url":"/api/v1/patients","user":"unauthenticated"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-06-19 19:18:29"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-06-19 19:18:29"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-06-19 19:18:30"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-06-19 19:26:01"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-06-19 19:26:01"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-06-19 19:26:02"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-06-19 19:29:23"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-06-19 19:29:23"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-06-19 19:29:24"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-06-19 19:30:43"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-06-19 19:30:43"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-06-19 19:30:43"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-06-19 19:32:41"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-06-19 19:32:41"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-06-19 19:32:42"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-06-19 19:34:19"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-06-19 19:34:20"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-06-19 19:34:20"}
+{"body":{"email":"ivan@gmail.com","password":"123456"},"level":"error","message":"Incorrect email or password","method":"POST","service":"dental-clinic-api","stack":"Error: Incorrect email or password\n    at login (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/src/controllers/authController.js:27:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-06-19 19:34:57","url":"/api/v1/auth/login","user":"unauthenticated"}
+{"body":{"email":"ivan@gmail.com","password":"123456789"},"level":"error","message":"Incorrect email or password","method":"POST","service":"dental-clinic-api","stack":"Error: Incorrect email or password\n    at login (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/src/controllers/authController.js:27:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-06-19 19:35:22","url":"/api/v1/auth/login","user":"unauthenticated"}
+{"body":{"email":"ivan@gmail.com","password":"123456789"},"level":"error","message":"Incorrect email or password","method":"POST","service":"dental-clinic-api","stack":"Error: Incorrect email or password\n    at login (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/src/controllers/authController.js:27:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-06-19 19:37:34","url":"/api/v1/auth/login","user":"unauthenticated"}
+{"body":{"email":"ivan1@gmail.com","password":"123456789"},"level":"error","message":"Incorrect email or password","method":"POST","service":"dental-clinic-api","stack":"Error: Incorrect email or password\n    at login (/home/ivan/Desarrollo/Trabajo/sistema-dentista/backend/src/controllers/authController.js:27:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-06-19 19:37:57","url":"/api/v1/auth/login","user":"unauthenticated"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-06-19 19:40:03"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-06-19 19:40:03"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-06-19 19:40:04"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-06-19 19:41:15"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-06-19 19:41:15"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-06-19 19:41:16"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-06-19 19:42:21"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-06-19 19:42:21"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-06-19 19:42:21"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-06-19 19:43:51"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-06-19 19:43:51"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-06-19 19:43:51"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-06-19 19:44:39"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-06-19 19:44:39"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-06-19 19:44:40"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-06-19 19:45:28"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-06-19 19:45:28"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-06-19 19:45:29"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:49:15"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:49:15"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:49:16"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:49:48"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:49:48"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:49:49"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:49:57"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:49:57"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:49:58"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:50:04"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:50:05"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:50:05"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:50:46"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:50:46"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:50:47"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:51:04"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:51:04"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:51:05"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:51:15"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:51:15"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:51:16"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:51:33"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:51:33"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:51:34"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:51:41"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:51:41"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:51:42"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:51:49"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:51:49"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:51:50"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:52:01"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:52:01"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:52:01"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:53:22"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:53:22"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:53:23"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:53:28"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:53:28"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:53:28"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:53:36"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:53:36"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:53:37"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:53:51"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:53:51"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:53:52"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:54:18"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:54:18"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:54:19"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:54:34"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:54:34"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:54:35"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:54:43"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:54:43"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:54:44"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:55:01"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:55:01"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:55:02"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:55:25"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:55:25"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:55:26"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:55:34"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:55:34"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:55:35"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:55:56"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:55:56"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:55:57"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:56:24"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:56:24"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:56:25"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:56:34"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:56:34"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:56:34"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:56:39"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:56:39"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:56:40"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:56:43"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:56:43"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:56:44"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:56:58"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:56:59"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:56:59"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:57:07"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:57:07"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:57:08"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:57:21"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:57:22"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:57:22"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:57:45"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:57:45"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:57:46"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:57:54"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:57:55"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:57:55"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:58:10"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:58:10"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:58:11"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:58:40"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:58:40"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:58:41"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:58:47"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:58:47"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:58:47"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 14:59:34"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 14:59:34"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 14:59:35"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 15:02:18"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 15:02:18"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 15:02:19"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 15:03:03"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 15:03:04"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 15:03:04"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 15:03:34"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 15:03:34"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 15:03:35"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 15:03:58"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 15:03:58"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 15:03:59"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 15:04:34"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 15:04:34"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 15:04:35"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 15:04:51"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 15:04:51"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 15:04:52"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 15:05:10"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 15:05:11"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 15:05:11"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 15:05:24"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 15:05:24"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 15:05:25"}
+{"level":"info","message":"Server running in development mode on port 3000","service":"dental-clinic-api","timestamp":"2025-07-10 15:06:16"}
+{"level":"info","message":"Database connection has been established successfully.","service":"dental-clinic-api","timestamp":"2025-07-10 15:06:16"}
+{"level":"info","message":"Database synchronized","service":"dental-clinic-api","timestamp":"2025-07-10 15:06:17"}
